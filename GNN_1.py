@@ -14,3 +14,14 @@ print(Features.shape)
 
 print(Laplacian.shape)
 
+with open('Manuscript.txt', encoding='utf8') as f:
+    lines = f.read()
+charmap = []
+for x in lines:
+    if x in charmap:
+        continue
+    else:
+        charmap.append(x)
+print(charmap)
+
+
