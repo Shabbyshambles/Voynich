@@ -82,3 +82,4 @@ for x in charmap:
     #print(charmap[n])
 print(Laplace2)
 
+print(features)
