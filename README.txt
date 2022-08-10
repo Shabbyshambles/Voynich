@@ -1,3 +1,17 @@
+Tasks done:
+DL of v101 of Voynich Manuscript
+Wrote code to read in manuscript and clean it of metadata
+(could metadata be valuable? return to analyze after initial tests)
+Wrote code to get feature vector and Laplacian representation of character graph, wherein nodes are characters and how often
+they come after or before other characters is the edges
+Identified most common characters used
+
+Tasks to do:
+Clean up code
+Come up with way to analyze graph for anomalies.(walk the graph, perhaps?)
+Find other languages from similar time periods and locations and create graphs and features etc.
+
+
 Notes:
 The transliteration of the Voynich manuscript has been conducted by multiple people into multiple alphabets. 
 The most complete one I can find is "Voynich101" or v101, so that is what I will use as a first pass
