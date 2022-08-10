@@ -82,4 +82,25 @@ for x in charmap:
     #print(charmap[n])
 print(Laplace2)
 
-print(features)
+print(sorted(features.items(), key=lambda kv:
+                 (kv[1], kv[0])))
+print(33756/sum(features.values()))
+print(25055/sum(features.values()))
+print(17439/sum(features.values()))
+print(14497/sum(features.values()))
+print(13751/sum(features.values()))
+n = -1
+for x in charmap:
+    n+=1
+    if x=='.':
+        break
+print(charmap[n])
+track = 0
+i = 0
+for num in range(len(charmap)):
+    if(Laplace2[n, num])<track:
+        track=Laplace2[n, num]
+        i = num
+    print(Laplace2[n, num])
+print("most commonly occuring char nearby: " + str(charmap[i]))
+print("edges: " + str(track))
